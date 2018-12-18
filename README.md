@@ -12,10 +12,10 @@ or writing queries, you can use this API.
 
 This API currently provides two methods
 
-* name
+* name()
 
-	This gives you the name of the sandbox. This will give you the sandbox name, if you're in a 
-	sandbox. Else, if you are in a Production environment, it will give you 'Production' as the name.
+	This gives you the name of the Environment. This will give you the sandbox name, if you're in a 
+	sandbox. Else, if you are in a Production environment, it will give you *Production* as the name.
 	You can of course, change this name to any other, as per your requirement. See the configuration
 	section below for more details.
 	
@@ -25,7 +25,7 @@ This API currently provides two methods
 	String envName = Environment.name();
 	```
 
-* isSandbox
+* isSandbox()
 
 	This gives you a Boolean state, whether or not its a sandbox. 
 
