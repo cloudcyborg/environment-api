@@ -90,7 +90,7 @@ Enter this class name at this time.
 The code will automatically set up the data for you. 
 You'll need to make sure this is documented as a step in your Sandbox refresh steps.
 
-> NOTE: If you already have a post sandbox refresh class, then copy this code into that class. 
+> NOTE: If you already have a post sandbox refresh class, then copy this class's code into that class. 
 
 
 
