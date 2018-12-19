@@ -38,10 +38,12 @@ This API currently provides two methods
 	}
 	```
 	
-## Configuration
+## Configuration before Usage
 
 On the backend, this package consists of a Custom Setting called Environment__c which will store the
 environment releted details. This needs to be populated with just a single record for an environment.
+
+## Configuration in Production Environment
 
 For a Production environment, this record needs to be populated manually. Or you can use this script 
 below.
@@ -64,6 +66,23 @@ System.assertEquals(Environment.name(), 'Production');
 System.assertEquals(Environment.isSandbox(), false);
 
 ```
+
+Run this script from the Developer Console or any tool you prefer to use. 
+
+## Configuration in existing Sandbox environment
+
+For doing the same in a sandbox environment, you can run the above script in that environment as well, 
+provided you need to make changes in the script's data to suit the environment. 
+
+The name needs to store the *sandbox name*, and the isSandbox should return *true*. Make the changes
+in the script accordingly, and run it in the sandbox's developer console. 
+
+## Configuring this while creating or refreshing a sandbox
+
+
+
+
+
 
 
 
