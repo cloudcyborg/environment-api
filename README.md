@@ -49,6 +49,7 @@ below.
 ```java
 Environment__c env = new Environment__c();
 env.Name = 'ENV';
+// Change this name if you want. 
 env.Environment_Name__c = 'Production';
 env.is_Sandbox__c = false;
 
