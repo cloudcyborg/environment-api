@@ -85,7 +85,7 @@ interface.
 During sandbox creation/refresh, salesforce asks you if you want to execute any class after the operation. 
 Enter this class name at this time.
 
-[Image]
+![ApexClass](https://github.com/cloudcyborg/environment-api/blob/media/Apex.PNG)
 
 The code will automatically set up the data for you. 
 You'll need to make sure this is documented as a step in your Sandbox refresh steps.
