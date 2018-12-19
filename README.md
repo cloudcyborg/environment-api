@@ -8,6 +8,7 @@ and a different one for Production. Or, maybe differnt URLs from a custom settin
 whether you're in a UAT sandbox, or a DEV sandbox. Instead of manually hardcoding environment names
 or writing queries, you can use this API.
 
+
 ## Usage
 
 This API currently provides two methods
@@ -37,6 +38,18 @@ This API currently provides two methods
 		// execute production-related logic
 	}
 	```
+
+
+## Installation
+
+This is a package, which is represented by a package xml. You can directly deploy this to your 
+environment, using the force.com migration tool. 
+
+This package contains two test classes: *Environment_Test* and *SandboxPostRefreshConfig_Test*
+
+If you want to deploy using specfic tests, then you can enter these names; the package should
+deploy into your environment.
+
 	
 ## Configuration before Usage
 
@@ -69,6 +82,7 @@ System.assertEquals(Environment.isSandbox(), false);
 
 Run this script from the Developer Console or any tool you prefer to use. 
 
+
 ### Configuration in existing Sandbox environment
 
 For doing the same in a sandbox environment, you can run the above script in that environment as well, 
@@ -76,6 +90,7 @@ provided you need to make changes in the script's data to suit the environment.
 
 The name needs to store the *sandbox name*, and the isSandbox should return *true*. Make the changes
 in the script accordingly, and run it in the sandbox's developer console. 
+
 
 ### Configuring this while creating or refreshing a sandbox
 
@@ -87,10 +102,11 @@ Enter this class name at this time.
 
 ![ApexClass](https://github.com/cloudcyborg/environment-api/blob/media/Apex.PNG)
 
-The code will automatically set up the data for you. 
 You'll need to make sure this is documented as a step in your Sandbox refresh steps.
 
 > NOTE: If you already have a post sandbox refresh class, then copy this class's code into that class. 
+
+
 
 
 
