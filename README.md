@@ -42,7 +42,8 @@ This API currently provides two methods
 
 ## Installation
 
-First, Click on *Clone or Download* button above to download this.
+First, Click on *Clone or Download* button above to download this. Unzip the file. You'll see
+a folder added into your current directory. Open the contents of that folder.
 
 This is a package, which is represented by a package xml. You can directly deploy this to your 
 environment, using the force.com migration tool. 
