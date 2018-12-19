@@ -77,7 +77,23 @@ provided you need to make changes in the script's data to suit the environment.
 The name needs to store the *sandbox name*, and the isSandbox should return *true*. Make the changes
 in the script accordingly, and run it in the sandbox's developer console. 
 
-## Configuring this while creating or refreshing a sandbox
+### Configuring this while creating or refreshing a sandbox
+
+This package includes a class called **SandboxPostRefreshConfig** which implements the **SandboxPostCopy**
+interface.
+
+During sandbox creation/refresh, salesforce asks you if you want to execute any class after the operation. 
+Enter this class name at this time.
+
+[Image]
+
+The code will automatically set up the data for you. 
+You'll need to make sure this is documented as a step in your Sandbox refresh steps.
+
+> NOTE: If you already have a post sandbox refresh class, then copy this code into that class. 
+
+
+
 
 
 
