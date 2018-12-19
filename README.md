@@ -79,7 +79,7 @@ in the script accordingly, and run it in the sandbox's developer console.
 
 ### Configuring this while creating or refreshing a sandbox
 
-This package includes a class called **SandboxPostRefreshConfig** which implements the **SandboxPostCopy**
+This package includes a class called **_SandboxPostRefreshConfig_** which implements the **_SandboxPostCopy_**
 interface.
 
 During sandbox creation/refresh, salesforce asks you if you want to execute any class after the operation. 
@@ -91,6 +91,8 @@ The code will automatically set up the data for you.
 You'll need to make sure this is documented as a step in your Sandbox refresh steps.
 
 > NOTE: If you already have a post sandbox refresh class, then copy this code into that class. 
+
+
 
 
 
