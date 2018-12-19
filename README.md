@@ -5,8 +5,10 @@ Currently it provides the environment name, and whether or not its a sandbox.
 
 This comes in handy when you have environment specific logic. Eg. a different logic for a sandbox
 and a different one for Production. Or, maybe differnt URLs from a custom setting based on 
-whether you're in a UAT sandbox, or a DEV sandbox. Instead of manually hardcoding environment names
-or writing queries, you can use this API.
+whether you're in a UAT sandbox, or a DEV sandbox. 
+
+Instead of manually hardcoding environment names or writing queries, you can use this API. Configuring
+this is just a one-time activity. See below for details.
 
 
 ## Usage
