@@ -51,7 +51,7 @@ If you want to deploy using specfic tests, then you can enter these names; the p
 deploy into your environment.
 
 If you are unsure how to deploy this, i've created another tool to help you with deployments.
-![Check the video here](https://www.youtube.com/watch?v=HlA9p0goyKA)
+[Check the video here](https://www.youtube.com/watch?v=HlA9p0goyKA)
 	
 ## Configuration before Usage
 
