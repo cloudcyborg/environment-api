@@ -37,6 +37,32 @@ This API currently provides two methods
 		// execute production-related logic
 	}
 	```
+	
+## Configuration
+
+On the backend, this package consists of a Custom Setting called Environment__c which will store the
+environment releted details. This needs to be populated with just a single record for an environment.
+
+For a Production environment, this record needs to be populated manually. Or you can use this script 
+below.
+
+```java
+Environment__c env = new Environment__c();
+env.Name = 'ENV';
+env.Environment_Name__c = 'Production';
+env.is_Sandbox__c = false;
+
+insert env;
+
+List<Environment__c> envList = [SELECT Name 
+                                FROM Environment__c];
+
+// Verify data inserted correctly
+System.assertEquals(envList.size(), 1);
+System.assertEquals(Environment.name(), 'Production');
+System.assertEquals(Environment.isSandbox(), false);
+
+```
 
 
 
